@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grofers Checkout</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<table id="myTable">
-		<tr>
-			<th>Items</th>
-			<th>Price</th>
-		</tr>
-		<tr>
-			<td>item 1</td>
-			<td data-ns-test="price">25</td>
-		</tr>
-		<tr>
-			<td>item 2</td>
-			<td data-ns-test="price">25</td>
-		</tr>
-		<tr>
-			<td>item 3</td>
-			<td data-ns-test="price">25</td>
-		</tr>
-	</table>
-	<script type="text/javascript" src="./script.js">
-	</script>
+
+    <h1>Grocery List</h1>
+    
+    <table id="groceryTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item">
+                <td>Apple</td>
+                <td class="prices">20</td>
+            </tr>
+            <tr class="item">
+                <td>Banana</td>
+                <td class="prices">10</td>
+            </tr>
+            <tr class="item">
+                <td>Milk</td>
+                <td class="prices">50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+
+    <script src="./script.js"></script>
 
 </body>
-
 </html>
